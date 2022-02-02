@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><%- include("./header", {title: "New Message"}) %></head>
+    <body>
+        <form method="POST" action="/new" name="newMessage">
+            <label for="msgText">Message</label>
+            <textarea rows="4" cols="20" id="msgText" name="msgText" maxlength="1000"></textarea>
+            <label for="msgUser">Name</label>
+            <input type="text" id="msgUser" name="msgUser">
+            <input type="submit" value="Send message">
+        </form>
+    </body>
+</html>

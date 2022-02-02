@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><%- include("./header", {title: "Mini Message Board"}) %></head>
+    <body>
+        <a href="/new">New Message</a>
+        <ul>
+            <% messages.forEach(function(msg) { %>
+                <li>
+                    <p><%= msg.text %></p>
+                    <p><strong><%= msg.user %></strong></p>
+                    <p>
+                        <%= msg.added.getDate()%>/<%= msg.added.getMonth() %>/<%= msg.added.getFullYear() %>
+                        <%= msg.added.getHours()%>:<%= msg.added.getMinutes()%>
+                    </p>
+                </li>
+            <% }) %>
+        </ul>
+    </body>
+</html>
