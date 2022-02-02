@@ -8,7 +8,7 @@
   },
   "name": "mini-message-board",
   "version": "1.0.0",
-  "main": "app.js",
+  "main": "bin/www",
   "devDependencies": {
     "nodemon": "^2.0.15"
   },
